@@ -1,0 +1,281 @@
+html
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تعمیر یخچال و فریزر و ماشین لباسشویی در اندیشه فاز ۳ | تعمیرگاه فاز ۳</title>
+<meta name="description" content="تعمیر تخصصی یخچال، فریزر و ماشین لباسشویی در محل، اندیشه فاز ۳ و حومه. اعزام فوری، گارانتی معتبر، قطعات اصل. تماس: ۰۹۳۵۴۹۳۳۱۷۷">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#1E3A8A;
+    --blue-light:#2563EB;
+    --green:#16A34A;
+    --green-dark:#15803D;
+    --orange:#F97316;
+    --bg:#F3F4F6;
+    --white:#ffffff;
+    --text:#1F2937;
+    --muted:#6B7280;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:'Vazirmatn',Tahoma,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.8;
+    padding-bottom:70px; /* space for mobile bar */
+  }
+  a{text-decoration:none;color:inherit;}
+  .container{max-width:1100px;margin:0 auto;padding:0 16px;}
+
+  /* ===== Header ===== */
+  header{
+    background:var(--white);
+    box-shadow:0 2px 10px rgba(0,0,0,.06);
+    position:sticky;top:0;z-index:100;
+  }
+  .header-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:12px 0;gap:10px;
+  }
+  .logo{font-weight:900;font-size:1.2rem;color:var(--blue);}
+  .logo span{color:var(--orange);}
+  .header-call{
+    background:var(--green);color:#fff;font-weight:700;
+    padding:10px 18px;border-radius:10px;font-size:.95rem;
+    white-space:nowrap;transition:.2s;
+  }
+  .header-call:hover{background:var(--green-dark);}
+
+  /* ===== Hero ===== */
+  .hero{
+    background:linear-gradient(135deg,var(--blue) 0%,var(--blue-light) 100%);
+    color:#fff;text-align:center;padding:60px 16px;
+  }
+  .hero h1{font-size:1.7rem;font-weight:900;margin-bottom:14px;line-height:1.5;}
+  .hero p{font-size:1rem;opacity:.95;margin-bottom:26px;}
+  .hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:14px 26px;border-radius:12px;font-weight:700;font-size:1rem;
+    transition:.2s;
+  }
+  .btn-call{background:var(--green);color:#fff;}
+  .btn-call:hover{background:var(--green-dark);transform:translateY(-2px);}
+  .btn-wa{background:#fff;color:var(--blue);}
+  .btn-wa:hover{background:#e5e7eb;transform:translateY(-2px);}
+
+  /* ===== Features ===== */
+  .features{background:var(--white);padding:30px 0;}
+  .features-grid{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:14px;
+  }
+  .feature{
+    text-align:center;padding:16px 10px;border-radius:14px;
+    background:var(--bg);font-weight:700;font-size:.9rem;
+  }
+  .feature .ico{font-size:1.6rem;display:block;margin-bottom:6px;}
+
+  /* ===== Services ===== */
+  .section{padding:50px 0;}
+  .section-title{
+    text-align:center;font-size:1.4rem;font-weight:900;
+    color:var(--blue);margin-bottom:8px;
+  }
+  .section-sub{text-align:center;color:var(--muted);margin-bottom:32px;font-size:.9rem;}
+  .services-grid{
+    display:grid;grid-template-columns:1fr;gap:18px;
+  }
+  .service-card{
+    background:var(--white);border-radius:16px;padding:24px;
+    box-shadow:0 4px 16px rgba(0,0,0,.06);
+    border-right:5px solid var(--orange);
+    transition:.2s;
+  }
+  .service-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,.1);}
+  .service-card h3{font-size:1.15rem;color:var(--blue);margin-bottom:8px;}
+  .service-card p{color:var(--muted);font-size:.92rem;}
+
+  /* ===== Reviews ===== */
+  .reviews{background:var(--white);}
+  .review-card{
+    background:var(--bg);border-radius:14px;padding:20px;margin-bottom:14px;
+    font-size:.92rem;
+  }
+  .review-card .stars{color:var(--orange);margin-bottom:6px;}
+  .review-card .name{color:var(--muted);font-size:.85rem;margin-top:8px;}
+
+  /* ===== Form ===== */
+  .form-section{background:linear-gradient(135deg,var(--blue) 0%,var(--blue-light) 100%);color:#fff;}
+  .form-section .section-title{color:#fff;}
+  .form-section .section-sub{color:rgba(255,255,255,.85);}
+  .order-form{
+    max-width:520px;margin:0 auto;background:rgba(255,255,255,.1);
+    padding:26px;border-radius:18px;backdrop-filter:blur(6px);
+  }
+  .order-form input,.order-form select{
+    width:100%;padding:13px 16px;border-radius:10px;border:none;
+    margin-bottom:12px;font-family:inherit;font-size:.95rem;
+  }
+  .order-form input:focus,.order-form select:focus{outline:2px solid var(--orange);}
+  .order-form button{
+    width:100%;padding:14px;border:none;border-radius:10px;
+    background:var(--orange);color:#fff;font-weight:700;font-size:1rem;
+    cursor:pointer;font-family:inherit;transition:.2s;
+  }
+  .order-form button:hover{background:#ea580c;}
+
+  /* ===== Footer ===== */
+  footer{background:#0F172A;color:#CBD5E1;padding:40px 16px 30px;text-align:center;}
+  footer .logo{color:#fff;margin-bottom:12px;display:block;}
+  footer p{font-size:.9rem;margin-bottom:8px;}
+  footer .phones{margin:14px 0;font-weight:700;color:#fff;}
+  footer a{color:var(--orange);}
+
+  /* ===== Mobile sticky bar ===== */
+  .mobile-bar{
+    position:fixed;bottom:0;left:0;right:0;z-index:200;
+    display:flex;background:var(--white);box-shadow:0 -4px 16px rgba(0,0,0,.15);
+  }
+  .mobile-bar a{
+    flex:1;text-align:center;padding:14px 8px;font-weight:700;font-size:.9rem;
+    display:flex;align-items:center;justify-content:center;gap:6px;
+  }
+  .mobile-bar .m-call{background:var(--green);color:#fff;}
+  .mobile-bar .m-wa{background:#25D366;color:#fff;}
+
+  /* ===== Desktop ===== */
+  @media(min-width:768px){
+    .hero h1{font-size:2.3rem;}
+    .features-grid{grid-template-columns:repeat(4,1fr);}
+    .services-grid{grid-template-columns:repeat(3,1fr);}
+    .mobile-bar{display:none;}
+    body{padding-bottom:0;}
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container header-inner">
+    <div class="logo">تعمیرگاه <span>فاز ۳</span></div>
+    <a href="tel:09354933177" class="header-call">📞 ۰۹۳۵۴۹۳۳۱۷۷</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>تعمیر یخچال، فریزر و ماشین لباسشویی در محل</h1>
+    <p>خدمات تخصصی، اعزام فوری، گارانتی معتبر — اندیشه، فاز ۳ و حومه</p>
+    <div class="hero-btns">
+      <a href="tel:09354933177" class="btn btn-call">📞 تماس فوری</a>
+      <a href="https://wa.me/989354933177" class="btn btn-wa">💬 واتساپ</a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="container">
+    <div class="features-grid">
+      <div class="feature"><span class="ico">⚡</span>اعزام فوری</div>
+      <div class="feature"><span class="ico">✅</span>گارانتی تعمیر</div>
+      <div class="feature"><span class="ico">🔧</span>قطعات اصل</div>
+      <div class="feature"><span class="ico">💰</span>قیمت منصفانه</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="container">
+    <h2 class="section-title">خدمات ما</h2>
+    <p class="section-sub">تعمیر تخصصی در محل، با گارانتی</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>❄️ تعمیر یخچال</h3>
+        <p>ساید بای ساید، دوقلو، معمولی — رفع نشتی، سرد نکردن، صدای غیرعادی، خرابی کمپرسور و ترموستات</p>
+      </div>
+      <div class="service-card">
+        <h3>🧊 تعمیر فریزر</h3>
+        <p>فریزر خانگی و صنعتی — رفع یخ‌زدگی، سرد نکردن، نشتی گاز و خرابی موتور</p>
+      </div>
+      <div class="service-card">
+        <h3>🌀 تعمیر ماشین لباسشویی</h3>
+        <p>اتوماتیک و نیمه‌اتوماتیک — رفع ارور، آب‌بندی، تخلیه نشدن، چرخش نداشتن</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews">
+  <div class="container">
+    <h2 class="section-title">نظرات مشتریان</h2>
+    <p class="section-sub">اعتماد ساکنین فاز ۳</p>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      «سریع اومدن و یخچالم رو درست کردن، خیلی راضی بودم.»
+      <div class="name">— یکی از ساکنین فاز ۳</div>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      «لباسشویی‌مون آب‌بندی داشت، همون روز درست شد. قیمت هم منصفانه بود.»
+      <div class="name">— ساکن اندیشه</div>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      «فریزر سرد نمی‌کرد، گازش رو شارژ کردن و گارانتی هم دادن. ممنون.»
+      <div class="name">— ساکن فاز ۳</div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="section form-section">
+  <div class="container">
+    <h2 class="section-title">درخواست تعمیرکار</h2>
+    <p class="section-sub">فرم رو پر کن، سریع باهات تماس می‌گیریم</p>
+    <form class="order-form" action="https://wa.me/989354933177" method="get" target="_blank">
+      <input type="text" name="name" placeholder="نام شما" required>
+      <input type="tel" name="phone" placeholder="شماره تماس" required>
+      <select name="device" required>
+        <option value="">نوع دستگاه</option>
+        <option>یخچال</option>
+        <option>فریزر</option>
+        <option>ماشین لباسشویی</option>
+        <option>سایر</option>
+      </select>
+      <button type="submit">📩 ارسال درخواست</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <span class="logo">تعمیرگاه فاز ۳</span>
+    <p>اندیشه، فاز ۳ و محله‌های اطراف</p>
+    <p>ساعات کاری: شنبه تا پنجشنبه ۸ تا ۲۰ | جمعه با هماهنگی</p>
+    <div class="phones">
+      📞 <a href="tel:09354933177">۰۹۳۵۴۹۳۳۱۷۷</a> | <a href="tel:09387720388">۰۹۳۸۷۷۲۰۳۸۸</a>
+    </div>
+    <p>💬 واتساپ: <a href="https://wa.me/989354933177">۰۹۳۵۴۹۳۳۱۷۷</a> | <a href="https://wa.me/989387720388">۰۹۳۸۷۷۲۰۳۸۸</a></p>
+    <p style="margin-top:18px;font-size:.8rem;opacity:.6;">© تعمیرگاه فاز ۳ — تمامی حقوق محفوظ است</p>
+  </div>
+</footer>
+
+<!-- MOBILE STICKY BAR -->
+<div class="mobile-bar">
+  <a href="tel:09354933177" class="m-call">📞 تماس</a>
+  <a href="https://wa.me/989354933177" class="m-wa">💬 واتساپ</a>
+</div>
+
+</body>
+</html>
+```
